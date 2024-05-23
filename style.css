@@ -188,6 +188,7 @@ header > .hero-area > .content > .icons > a:hover {
     width: 30%;
     height: 40%;
     cursor: pointer;
+    background-color: gray;
 }
 
 .one > .container > .item:hover {
