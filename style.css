@@ -1,0 +1,732 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header > nav {
+    background-color: dodgerblue;
+    color: white;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+}
+
+header > nav > .menu > ul {
+    display: flex;
+    height: 100%;
+}
+
+header > nav > .menu > ul > li {
+    list-style: none;
+    height: 100%;
+    transition: 0.5s;
+}
+
+header > nav > .menu > ul > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    height: 50px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid white;
+}
+
+header > nav > .menu > ul > li:first-child > a {
+    border-left: 1px solid white;
+}
+
+header > nav > .menu > ul > li:hover {
+    background-color: rgb(11, 107, 202);
+}
+
+header .sub-menu {
+    position: absolute;
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* height: 100px; */
+    opacity: 0;
+    visibility: hidden;
+    transition:  0.5s;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.8);
+}
+
+header > nav > .menu > ul > li:hover  .sub-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+header .sub-menu li {
+    width: 200px;
+    list-style: none;
+    padding: 10px;
+    border-top: 1px solid white;
+    transition: 0.5s;
+}
+
+
+
+header .sub-menu > li a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+header .sub-menu > li:hover {
+    background-color: rgb(11, 107, 202);
+}
+
+
+/* css for hero area start here */
+
+header > .hero-area {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/hero.jpg');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > .hero-area > .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+}
+
+header > .hero-area > .content h1 {
+    background-color: rgba(30, 143, 255, 0.301);
+    color: white;
+    font-size: 4rem;
+    width: 70%;
+    border-radius: 10px;
+    line-height: 1em;
+    padding: 10px;
+}
+
+header > .hero-area > .content p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+header > .hero-area > .content > button {
+    background-color: rgb(9, 78, 148);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 0px 20px 10px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.5s;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+header > .hero-area > .content > button:hover {
+    background-color: green;
+    border: 1px solid white;
+}
+
+header > .hero-area > .content > .icons {
+    display: flex;
+}
+
+header > .hero-area > .content > .icons > a {
+    border: 1px solid white;
+    margin: 0 10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+header > .hero-area > .content > .icons > a:hover {
+    transform: rotate(360deg);
+}
+
+
+/* css for section one start here */
+
+.one {
+    background-color: lightblue;
+}
+
+.one > .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.one > .container > .item {
+    padding: 15px 20px;
+    transition: 0.5s;
+    width: 30%;
+    height: 40%;
+    cursor: pointer;
+}
+
+.one > .container > .item:hover {
+    box-shadow: 8px 8px 10px rgba(0,0,0,0.5);
+}
+
+.one > .container > .item > h2 {
+    margin: 15px 0;
+}
+
+/* css for section two start here */
+
+.two {
+    /* height: 100vh; */
+    padding: 100px 0;
+
+}
+
+.two > .container {
+    width: 75%;
+    margin: 0 auto;
+    /* height: 90vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.two > .container > .title > h2 {
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 40px;
+}
+
+.two > .container > .title > h2::after {
+    content: "";
+    position: absolute;
+    bottom: -0.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 0.3rem;
+    background-color: brown;
+}
+
+.two > .container > .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.two > .container > .content .image {
+    width: 100%;
+}
+
+.two .description {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6rem; */
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.two > .container > .content > .description > .first {
+    color: brown;
+    /* white-space: nowrap; */
+}
+
+.two > .container > .content .second {
+    margin: 20px 0;
+}
+
+.two > .container > .content button {
+    background-color: brown;
+    margin-top: 20px;
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.two > .container > .content button:hover {
+    background-color: rgb(109, 8, 8);
+}
+
+
+/* css for section three start here */
+
+.three {
+    background-color: lightgoldenrodyellow;
+    width: 100%;
+}
+
+.three > .container {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.three > .container > .title {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.three > .container > .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.three > .container > .items > .item {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.three > .container > .items > .item > i {
+    color: brown;
+}
+
+.three > .container > .items > .item:hover {
+    background-color: rgb(230, 230, 22);
+    transform: scale(1.1);
+}
+
+.three > .container .item h2 {
+    margin: 10px 0;
+}
+
+/* css for section four start here */
+
+
+.four {
+    padding:  40px 0;
+}
+
+.four > .container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.four > .container > .title {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.four > .container > .items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.four > .container > .items > .item{
+    text-align: center;
+    margin: 0 10px;
+    width: 25%;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.four > .container > .items > .item > button {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+/* .four > .container > .items > .item:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+} */
+
+
+.four > .container > .items > .item > img {
+    width: 100%;
+}
+
+.four > .container > .items > .item > p {
+    padding: 0 10px;
+}
+
+.four > .container > .items > .item > .course-fee {
+    color: red;
+    /* margin: 10px 0; */
+    /* background-color: green; */
+}
+
+.four > .container > .items > .item > hr {
+    width: 90%;
+    margin: 5px 0;
+}
+
+.four > .container > .items > .item > a {
+    text-decoration: none;
+
+}
+
+
+/* css for section five start here */
+
+.five {
+    padding: 50px 0;
+    background-color: lightcoral;
+}
+
+.five > .container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.common-title {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 50px 0;
+}
+
+.common-title > p {
+    letter-spacing: 0.4em;
+}
+
+.five > .container > .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.five > .container > .items > .item {
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.five > .container > .items > .item > .image > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin-right: 15px;
+    border: 1px solid red;
+    transition: 0.5s;
+}
+
+.five > .container > .items > .item > .image > img:hover {
+    transform: rotate(360deg);
+}
+
+
+
+.five > .container > .items > .item > .content > p > .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+
+}
+
+.five > .container > .items > .item > .content > .description {
+    margin: 10px 0;
+}
+
+.five > .container > .items > .item > .content > p > .name::after {
+    content: " -";
+}
+
+.five > .container > .items > .item > .content > .stars {
+    color: tomato;
+}
+
+
+/* css for section six start here */
+
+
+.six {
+    background-image: url('./images/parallax.jpg');
+    height: 300px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* margin: 500px 0 ; */
+}
+
+.six > .container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
+
+.six > .container > .item > h2 {
+    margin: 10px 0;
+}
+
+/* css for section seven start here */
+
+.seven {
+    padding: 100px 0;
+    /* background-color: lightblue; */
+}
+
+.seven > .container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.seven > .container > .blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.seven > .container > .blogs > .blog > .image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.seven .blog .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+
+.seven .blog .image:hover img{
+    transform: scale(1.5);
+}
+
+.seven .blog .image:hover .icon {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.377);
+}
+
+.seven .blog img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.seven .blog .icon > p {
+    font-size: 20px;
+    /* margin-top: 10px; */
+    white-space: nowrap;
+}
+
+.seven .blog > .content p:first-child {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.seven .blog > .content .date_n_author {
+    color: rgba(0, 0, 0, 0.288);
+}
+
+
+/* css for section eight start here */
+
+.eight {
+    padding: 10px 0;
+    /* background-color: lightblue; */
+}
+
+.eight > .container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.eight > .container > .form-map {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    /* height: 100px; */
+
+}
+
+.eight > .container > .form-map > .form {
+    border: 1px solid black;
+    /* grid-column: 1 / span 3; */
+    background-color: rgb(206, 202, 202);
+    padding: 10px;
+}
+
+.eight > .container > .form-map > .map {
+    border: 1px solid black;
+    /* grid-column: 4 / span 5; */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col {
+    width: 100%;
+    padding: 10px;
+}
+
+.col input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.eight button {
+    background-color: rgb(3, 74, 145);
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.eight .icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.eight .icons > .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eight .icons > .item > i {
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: rgb(3, 74, 145);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.eight .icons > .item > p > a {
+    text-decoration: none;
+    color: gray;
+
+}
+
+
+/* css for footer start here */
+
+footer {
+    background-color: darkcyan;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer > .top-area {
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+
+footer > .top-area > .items {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    color: rgb(199 199 199);
+}
+
+
+footer > .top-area > .items > .item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    height: 250px;
+    width: 33%;
+    padding: 10px;
+}
+
+footer > .top-area > .items > .item h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer > .top-area > .items > .item i {
+    color: white;
+}
+
+footer > .top-area > .items > .item a {
+    display: block;
+    color: crimson;
+    text-decoration: none;
+}
+
+footer > .bottom-area {
+    text-align: center;
+    color: rgb(199 199 199);
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: space-around;
+}
+
+footer > .bottom-area > .menu > a {
+    text-decoration: none;
+    color: rgb(199 199 199);
+    padding: 0 15px;
+}
+
+footer .copyright a {
+    color: crimson;
+    text-decoration: none;
+}
